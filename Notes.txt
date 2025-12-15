@@ -19,4 +19,13 @@ pip3.10 install --user pythonanywhere : python anywhere create
 pa_autoconfigure_django.py --python=3.10 git@github.com:MagnusLightwod/projects-personal-25.git : configure with github
 // last line downloads code from github, creates venv on python anywhere, updates ettings and database. 
 
-git remote add origin https://github.com/<MagnusLightwod>/projects-personal-25.git
+git remote add origin https://github.com/<MagnusLightwod>/my-first-blog.git
+
+
+
+git remote set-url origin https://github.com/MagnusLightwod/projects-personal-25.git : switch git branch
+
+test user ; maggytest
+
+To get python anywhere needed to make public rsa key then pu ton github 
+
