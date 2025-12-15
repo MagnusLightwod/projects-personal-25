@@ -1,0 +1,22 @@
+python manage.py startapp blog : start new app 
+
+myvenv\Scripts\activate  OR activate virtual env : start venv
+
+Once app created add it to installed apps in settings
+
+python manage.py createsuperuser  : create admin // Username and password: test2
+
+python manage.py makemigrations blog : Migration file for our app made
+
+python manage.py migrate blog : model is on database
+
+python manage.py runserver : start django server
+
+
+create account, go to account then get api token.
+dash board then bash
+pip3.10 install --user pythonanywhere : python anywhere create 
+pa_autoconfigure_django.py --python=3.10 git@github.com:MagnusLightwod/projects-personal-25.git : configure with github
+// last line downloads code from github, creates venv on python anywhere, updates ettings and database. 
+
+git remote add origin https://github.com/<MagnusLightwod>/projects-personal-25.git
