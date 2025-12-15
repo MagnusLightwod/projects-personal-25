@@ -29,3 +29,7 @@ test user ; maggytest
 
 To get python anywhere needed to make public rsa key then pu ton github 
 
+
+path('', views.post_list, name='post_list'),
+# blank '' basically means default or home path.
+

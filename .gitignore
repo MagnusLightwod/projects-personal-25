@@ -26,6 +26,8 @@ ehthumbs*.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 
+Notes.txt
+
 # Visual Studio
 .vscode/
 .history
