@@ -4,11 +4,31 @@
         <!-- Title is the name of the tab -->
         <title> Chris' Blog</title>
     </head>
-    <body>
-       
-        <header>
+
+    <header>
             <h1><a href="/"> My Django Girls Blog Project</a></hr1>
+               
         </header>
+    <body>
+        {% for post in posts %}
+            <article>
+                <time>published: {{ post.published_date }}</time>
+                <h2><a href=""> {{ post.title }}</a></h2>
+                <p> {{ post.text|linebreaksbr }}</p>
+                 <!-- This line breaker is basically \n -->
+            </article>
+        {% endfor %}
+      
+    </body>
+</html>
+
+
+
+<!-- <header>
+            <h1><a href="/"> My Django Girls Blog Project</a></hr1>
+               
+        </header>
+         {{ posts }} 
 
         <article>
             <time> published: 12/15/2025 </time>
@@ -22,6 +42,4 @@
             <h2><a href=""> My Second post </a></h2>
             <p> Test post 2 </p>
         </article>
-        <!-- <a href="https://github.com/MagnusLightwod"> github</a> -->
-    </body>
-</html>
+        <a href="https://github.com/MagnusLightwod"> github</a>  -->
