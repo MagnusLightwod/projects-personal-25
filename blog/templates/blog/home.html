@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <article class="post">
+        <h2>Chris's Blog</h2>
+        <h2><a href="{% url 'post_list' %}">Posts</a></h2>
+    </article>
+{% endblock %}
