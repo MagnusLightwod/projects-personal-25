@@ -5,7 +5,7 @@ from . import views
 urlpatterns = [
     path('', views.home, name='home'),
 
-    # Posts listing moved to /posts/
+    # make a link to posts, it access the post_list page
     path('posts/', views.post_list, name='post_list'),
 
     # url pattern for post/post identifier
