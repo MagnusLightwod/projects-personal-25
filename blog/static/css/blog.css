@@ -48,6 +48,18 @@ h2,
 h3,
 h4 {
     font-family: 'Lobster', cursive;
+    flex: 1;
+}
+
+.page-footer {
+    margin-top: 40px;
+    background-color: #008000;
+    padding: 20px 20px 20px 40px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-family:'Times New Roman', Times, serif
 }
 
 h3 {
@@ -84,11 +96,8 @@ h3 {
 
 .post h2 a,
 .post h3 a,
-.post h2 a:visited,
-.post h3 a:visited,
-.post h3 a:link,
-.post h3 a:hover,
-.post h3 a:active {
+.post h2 a:visited
+{
     color: #008000;
 }
 
@@ -111,5 +120,54 @@ h3 {
     color: #FFFFFF;
     background-color: #C25100;
 }
+
+/* Sticky footer styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer styles */
+
+.page-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #060000;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links h2 {
+    margin: 0;
+    color: #ffffff;
+}
+/* the differnt h1,h2,h3 and stuff can target specific text. h2 above is just the chris blolg */
+.footer-links a,
+.footer-links h3,
+.footer-links h3 a:visited,
+.footer-links h3 a:link,
+.footer-links h3 a:hover,
+.footer-links h3 a:active  {
+    margin: 0;
+    color: #09a71e;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-links a:hover {
+    text-decoration-color: #fe0000;
+}
+
 
 

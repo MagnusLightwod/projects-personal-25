@@ -2,11 +2,12 @@
 
 {% extends 'blog/base.html' %}
 
-{% block content %}
-    <article class="post">
-        <h2>Chris's Blog</h2>
-        <h3> <a href="{% url 'post_list' %}"> Posts here!</a></h3>
-        <h2> <a href="https://github.com/MagnusLightwod/northeastern">Github Repo</a></h2>
-        <h2> <a href="https://www.linkedin.com/in/christopher-alcantara-164874153/"> LinkedIn Profile</a></h2>
-    </article>
-{% endblock %}`
+{% block footer %}
+    <div class="footer-links">
+        <h2> Chris's Blog </h2>
+        <h3> <a href="{% url 'post_list' %}" > Posts here!</a></h3>
+        <!-- target=_blank = open link in new tab -->
+        <h3> <a href="https://github.com/MagnusLightwod/northeastern" target="_blank">Github Repo</a></h3>
+        <h3> <a href="https://www.linkedin.com/in/christopher-alcantara-164874153/" target="_blank"> LinkedIn Profile</a></h3>
+    </div>
+{% endblock %}
