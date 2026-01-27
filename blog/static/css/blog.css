@@ -139,6 +139,7 @@ main {
     padding: 20px;
     background-color: #060000;
 }
+/* positioning of links i think  */
 .footer-links {
     display: flex;
     justify-content: center;
@@ -152,6 +153,7 @@ main {
     color: #ffffff;
 }
 /* the differnt h1,h2,h3 and stuff can target specific text. h2 above is just the chris blolg */
+/* footer links text, since we are targeting the h3 and a portions which wrap the text specifically */
 .footer-links a,
 .footer-links h3,
 .footer-links h3 a:visited,
