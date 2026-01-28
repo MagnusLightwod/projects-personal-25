@@ -15,6 +15,6 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 
 
-def home(request):
+def footer(request):
     """Simple home page that links to the posts list."""
     return render(request, 'blog/home.html')
