@@ -1,5 +1,7 @@
 
 
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Inter:wght@300;400;700&display=swap'); */
 
 .page-header {
     background-color: #C25100;
@@ -23,7 +25,7 @@
     color: #ffffff;
     font-size: 60pt;
     text-decoration: none;
-
+    font-family:'Times New Roman', Times, serif !important;
 }
 .page-header h1,
 .page-header h1 a,
@@ -32,6 +34,7 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    font-family:'Times New Roman', Times, serif !important;
 }
 
 .page-header h3,
@@ -47,8 +50,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Lobster', cursive;
-    flex: 1;
+    font-family:'Times New Roman', Times, serif !important;
 }
 
 .page-footer {
@@ -59,7 +61,7 @@ h4 {
 }
 
 h5 {
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif !important;
 }
 
 h3 {
@@ -92,6 +94,7 @@ h3 {
 
 .post {
     margin-bottom: 70px;
+    font-family:'Times New Roman', Times, serif !important;
 }
 
 .post h2 a,
@@ -99,6 +102,7 @@ h3 {
 .post h2 a:visited
 {
     color: #008000;
+
 }
 
 .post > .date,
@@ -108,15 +112,14 @@ h3 {
 }
 
 .btn-secondary,
-.btn-secondar:visited {
+.btn-secondary:visited {
     color: #C25100;
     background: none;
     border-color: #C25200;
-    margin-left: 15px
+    margin-left: 15px;
 }
 
-
-.btn-secondar:hover {
+.btn-secondary:hover {
     color: #FFFFFF;
     background-color: #C25100;
 }
@@ -126,6 +129,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family:'Times New Roman', Times, serif !important;
 }
 
 main {
@@ -171,5 +175,19 @@ main {
     text-decoration-color: #fe0000;
 }
 
+p {
+    font-family:'Times New Roman', Times, serif !important;
+}
 
+/* Ensure header links keep heading styles and remove default link styling */
+.page-header h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Post title font */
+.post h2 {
+    
+    font-family:'Times New Roman', Times, serif !important;
+}
 
