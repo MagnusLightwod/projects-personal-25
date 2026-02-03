@@ -31,3 +31,6 @@ def register_view (request):
     form = UserCreationForm()
     # need blog here has it is part of the file tree
     return render(request, 'blog/users/register.html', { 'form': form}) 
+
+# need to make a url tp an html page, 
+# and display it with a view that takes in a request and does stuff
