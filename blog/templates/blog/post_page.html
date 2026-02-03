@@ -1,0 +1,38 @@
+
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+    <article class="post">
+
+        <time class="date"> {{ post.published_date }} </time>
+        <!-- django template tag%%.
+         pk short for primary key which is a unique intendier for records in the database -->
+        <h2><a href="{% url 'post_detail' pk=post.pk%}"> {{ post.title }} </a></h2>
+        <p> {{ post.text|linebreaksbr }} </p>
+
+    </article>
+    {% endfor %}
+{% endblock %}
+
+
+
+<!-- <header>
+            <h1><a href="/"> My Django Girls Blog Project</a></hr1>
+               
+        </header>
+         {{ posts }} 
+
+        <article>
+            <time> published: 12/15/2025 </time>
+            <h2><a href=""> My First Post 8:40 </a></h2>
+            <p> Test post </p>
+            
+        </article>
+
+        <article>
+            <time> published: 14/15/2025 8:41</time>
+            <h2><a href=""> My Second post </a></h2>
+            <p> Test post 2 </p>
+        </article>
+        <a href="https://github.com/MagnusLightwod"> github</a>  -->

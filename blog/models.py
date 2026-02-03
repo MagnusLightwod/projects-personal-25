@@ -21,3 +21,12 @@ class Post(models.Model):
     def __str__(self): # i think should allow a string with max len 200 to be printed
         return self.title 
     
+class User(models.Model):
+    username = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    first_name = models.TextField(max_length=255)
+    last_name = models.TextField(max_length=255)
+
+    email = models.TextField(max_length=255)
+    date_created = models.DateTimeField(blank=True, null=True)
+
