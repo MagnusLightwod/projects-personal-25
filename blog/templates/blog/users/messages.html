@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    Messages
+{% endblock %}
+
+{% block content %}
+
+<!-- list out users messages to others.
+ Show Person you are messaging
+ Show message and date of message
+ Some sort of input to message -->
+
+
+ <!-- https://docs.djangoproject.com/en/6.0/ref/contrib/messages/ -->
+ <main class="container">
+    <div class="row">
+        <div class="col">
+            <h1> Direct Messages </h1>
+            {% for message in messages %}
+                <div class="messages">
+                    <b> {{ message.sender }} </b>
+                    <p> {{ message.content }} - {{ message.datetime }}</p>
+
+                </div>
+                {% endfor %}
+        </div>
+    </div>
+ </main>
+{% endblock %}

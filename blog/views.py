@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Post
 from django.utils import timezone
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.messages import get_messages
 # Create your views here.
 
 def post_list(request):
@@ -31,6 +32,11 @@ def register_view (request):
     form = UserCreationForm()
     # need blog here has it is part of the file tree
     return render(request, 'blog/users/register.html', { 'form': form}) 
+
+
+def messages_view (request): 
+    message = get_messages(request)
+    return render(request, 'blog/users/messages.html', {'message': message})
 
 # need to make a url tp an html page, 
 # and display it with a view that takes in a request and does stuff

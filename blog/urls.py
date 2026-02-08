@@ -15,4 +15,7 @@ urlpatterns = [
     # url pattern for post/post identifier
     path('post/<int:pk>/', views.post_detail, name='post_detail'),
    # path ('', views.post_list, name='post_list'),
+
+   path('users/messages/', views.messages_view, name="messages")
+   
 ]
